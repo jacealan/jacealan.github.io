@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ahora</title>
+    <meta name="author" content="Jace">
+    <meta name="description" content="브라우저 시작 페이지로의 활용을 위한 페이지.">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="timeBlock">
+      <div id="time">Hello</div>
+      <div id="date">Today is</div>
+      <div id="weather">-</div>
+    </div>
+    <div id="bookmarkBlock">
+      <!-- Bookmark -->
+    </div>
+    <div id="todoBlock">
+      <form id="login-form" hidden>
+        <input maxlength="15" type="text" placeholder="Who are you?" required />
+        <!-- <button>Log In</button> -->
+      </form>
+      <div id="login-user" hidden>
+        <a href="javascript:void(0);" id="logout">👋</a>
+        <span id="username"></span>
+      </div>
+      <div id="user-todo" hidden>
+        <br />📝 ToDo
+        <div id="todo-list"></div>
+        <form id="todo-form">
+          <input type="text" placeholder="Write a to do" required />
+        </form>
+        <div style="font-size:8px; opacity: 30%">ToDo는 PC,ID 별로 관리됩니다.</div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/bookmark.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
